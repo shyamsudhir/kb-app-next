@@ -20,7 +20,7 @@ function TicketDetails() {
 
   <h4>Low Priority</h4>
   <ul>
-    <li><b>Description:</b> Issues that have minimal impact on the customer's operations or experience.</li>
+    <li><b>Description:</b> Issues that have minimal impact on the customer&apos;s operations or experience.</li>
     <li><b>Examples:</b> General inquiries, minor usability issues, feature requests.</li>
     <li><b>Response Time:</b> Typically addressed within a few days to a week.</li>
     <li><b>Resolution Time:</b> Can be resolved as part of regular maintenance or in future updates.</li>
