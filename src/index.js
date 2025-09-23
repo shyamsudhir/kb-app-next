@@ -43,7 +43,6 @@ root.render(
 			                	<Route path='/company_groups' element={<CompanyGroup />} />
 			                	<Route path='/tickets' element={<Ticket />} />
 			                	<Route path='/ticket_details' element={<TicketDetails />} />			                	
-			                	<Route path='/getting_started' element={<GettingStarted />} />			                  	
 			                	<Route path='/agents' element={<Agent />} />			                  	
 			                	<Route path='/teams' element={<Team />} />			                  	
 			                	<Route path='/call_route' element={<CallRoute />} />

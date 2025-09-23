@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 
 
-function GettingStarted() {
+function NotFound() {
   return (
           
     <div className="container">
@@ -71,4 +71,4 @@ function GettingStarted() {
   );
 }
 
-export default GettingStarted;
+export default NotFound;
