@@ -9,6 +9,11 @@ import Script from "next/script";
 export const metadata = {
   title: 'SupportSPOC',
   description: 'Ticketing & Live Chat with AI',
+  icons: {
+    icon: "/favicon.png", // this is in /public
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 }
 
 export default function RootLayout({ children }) {
@@ -19,6 +24,7 @@ export default function RootLayout({ children }) {
           href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
           rel="stylesheet"
         />
+        
       </head>
       <body>
         <TopMenu />
