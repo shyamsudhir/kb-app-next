@@ -114,7 +114,7 @@ function SideMenu() {
           </ul>
         </li>
 
-        <li className="item" onClick={() => { window.location.href = '/call_route'; }}>
+        <li className="item" onClick={() => { window.location.href = '/business_hours'; }}>
           <div className="nav_link submenu_item show_submenu">
             <span className="navlink_icon">
               <i className="bx bx-medal"></i>
