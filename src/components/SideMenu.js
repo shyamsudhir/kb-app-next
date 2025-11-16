@@ -10,6 +10,7 @@ function SideMenu() {
 	const adminRef = useRef(null)
 	const ticketRef = useRef(null)
 	const agentRef = useRef(null)
+  const callsRef = useRef(null)
 
 
 	useEffect(() => {
@@ -26,12 +27,10 @@ function SideMenu() {
     if (["/",  "/forgot_password", "/change_password"].includes(pathname)) {
       indexRef.current.style.display = "block";
     }
-    // if (
-    //   ["/calls", "/outgoing_call_rates", "/incoming_call_rates"].includes(pathname) ||
-    //   pathname.startsWith("/calls#")
-    // ) {
-    //   callsRef.current.style.display = "block";
-    // }
+    if (["/calls", "/outgoing_call_rates", "/incoming_call_rates"].includes(pathname))
+    {
+      callsRef.current.style.display = "block";
+    }
     if (["/contacts", "/companies", "/contact_groups", "/company_groups"].includes(pathname)) {
       contactRef.current.style.display = "block";
     }
@@ -111,6 +110,23 @@ function SideMenu() {
             <a href="/companies" className="nav_link sublink">{`Companies`}</a>
             <a href="/contact_groups" className="nav_link sublink">{`Contact Group`}</a>
             <a href="/company_groups" className="nav_link sublink">{`Company Group`}</a>
+          </ul>
+        </li>
+        <li className="item" onClick={() => { window.location.href = '/calls'; }}>
+          <div className="nav_link submenu_item">
+            <span className="navlink_icon">
+              <i className="bx bx-flag"></i>
+            </span>
+            <span className="navlink">{`Calls`}</span>
+            <i className="bx bx-chevron-right arrow-left"></i>
+          </div>
+
+          <ul className="menu_items submenu" ref={callsRef}>
+            <a href="/calls" className="nav_link sublink">{`Purchase Number`}</a>
+            <a href="/calls#incoming_call" className="nav_link sublink">{`Incoming Call`}</a>
+            <a href="/calls#outgoing_call" className="nav_link sublink">{`Outgoing Call`}</a>
+            <a href="/incoming_call_rates" className="nav_link sublink">{`Incoming Call Rates`}</a>
+            <a href="/outgoing_call_rates" className="nav_link sublink">{`Outgoing Call Rates`}</a>
           </ul>
         </li>
 

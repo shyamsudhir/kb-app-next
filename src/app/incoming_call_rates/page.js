@@ -1,36 +1,716 @@
-export const metadata = {
-  title: "Incoming Call | SupportSPOC Ticketing, Live Chat & AI Chatbot",
-  description:
-    "Manage incoming customer calls directly from SupportSPOC alongside tickets, live chat, and AI chatbot.",
-  keywords: [
-    "incoming call",
-    "call support",
-    "live chat",
-    "AI chatbot",
-    "ticketing system",
-  ],
-  openGraph: {
-    title: "Incoming Call | SupportSPOC Ticketing, Live Chat & AI Chatbot",
-    description:
-      "Handle incoming calls and integrate them with tickets and chats in SupportSPOC’s customer support platform.",
-    type: "website",
-    url: "https://www.supportspoc.com/incoming-call",
-    images: [
-      {
-        url: "https://www.supportspoc.com/images/incoming-call-preview.png",
-        width: 1200,
-        height: 630,
-        alt: "SupportSPOC Incoming Call Preview",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Incoming Call | SupportSPOC Ticketing, Live Chat & AI Chatbot",
-    description:
-      "Receive and manage customer calls in SupportSPOC along with tickets, chats, and AI chatbot support.",
-    images: [
-      "https://www.supportspoc.com/images/incoming-call-preview.png",
-    ],
-  },
-};
+"use client"
+import Link from 'next/link';
+
+export default function IncomingCallRates() {
+  return(
+
+<div class="content">
+    <div class='main' style={{padding:'10px'}}>
+		    <h3 style={{fontWeight:'1000', display:'flex', justifyContent: 'center' }}>Phone Number And Incoming Call Pricing</h3>
+              <div class="fd-callout-note">
+                  <strong>Note:</strong>
+                  <p>Currently only Numbers from <b>United States</b> and <b>Canada</b> can be purchased from portal. For Numbers from other countries, please reach out to <Link href="mailto:support@supportspoc.com">support@supportspoc.com</Link></p>
+              </div>
+
+				<table class='table'>
+					<tr><th>Country Code</th><th>Country</th><th>Number Type</th><th>Number Price<sub>/month</sub></th><th>Cost<sub>/minute</sub></th></tr>
+				{/*   <tr>
+				      <td>AR</td>
+				      <td>Argentina</td>
+				      <td>Local</td>
+				      <td>8.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>AR</td>
+				      <td>Argentina</td>
+				      <td>Toll Free</td>
+				      <td>25.00</td>
+				      <td>0.2433</td>
+				   </tr>
+				   <tr>
+				      <td>AT</td>
+				      <td>Austria</td>
+				      <td>Local</td>
+				      <td>1.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>AT</td>
+				      <td>Austria</td>
+				      <td>National</td>
+				      <td>1.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>AT</td>
+				      <td>Austria</td>
+				      <td>Toll Free</td>
+				      <td>25.00</td>
+				      <td>0.2411</td>
+				   </tr>
+				   <tr>
+				      <td>AU</td>
+				      <td>Australia</td>
+				      <td>Local</td>
+				      <td>3.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>AU</td>
+				      <td>Australia</td>
+				      <td>Mobile</td>
+				      <td>6.50</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>AU</td>
+				      <td>Australia</td>
+				      <td>Toll Free</td>
+				      <td>16.00</td>
+				      <td>0.0586</td>
+				   </tr>
+				   <tr>
+				      <td>BA</td>
+				      <td>Bosnia and Herzegovina</td>
+				      <td>Local</td>
+				      <td>42.00</td>
+				      <td>0.0646</td>
+				   </tr>
+				   <tr>
+				      <td>BA</td>
+				      <td>Bosnia and Herzegovina</td>
+				      <td>National</td>
+				      <td>42.00</td>
+				      <td>0.0646</td>
+				   </tr>
+				   <tr>
+				      <td>BB</td>
+				      <td>Barbados</td>
+				      <td>Local</td>
+				      <td>27.00</td>
+				      <td>0.0376</td>
+				   </tr>
+				   <tr>
+				      <td>BE</td>
+				      <td>Belgium</td>
+				      <td>Toll Free</td>
+				      <td>25.00</td>
+				      <td>0.3169</td>
+				   </tr>
+				   <tr>
+				      <td>BG</td>
+				      <td>Bulgaria</td>
+				      <td>Local</td>
+				      <td>3.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>BG</td>
+				      <td>Bulgaria</td>
+				      <td>Toll Free</td>
+				      <td>110.00</td>
+				      <td>0.21</td>
+				   </tr>
+				   <tr>
+				      <td>BJ</td>
+				      <td>Benin</td>
+				      <td>Mobile</td>
+				      <td>27.00</td>
+				      <td>0.1376</td>
+				   </tr>
+				   <tr>
+				      <td>BR</td>
+				      <td>Brazil</td>
+				      <td>Local</td>
+				      <td>4.25</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>BR</td>
+				      <td>Brazil</td>
+				      <td>National</td>
+				      <td>10.00</td>
+				      <td>0.0451</td>
+				   </tr>
+				   <tr>
+				      <td>BW</td>
+				      <td>Botswana</td>
+				      <td>Toll Free</td>
+				      <td>50.00</td>
+				      <td>0.4578</td>
+				   </tr>
+          */}
+				   <tr>
+				      <td>CA</td>
+				      <td>Canada</td>
+				      <td>Local</td>
+				      <td>1.15</td>
+				      <td>0.0171</td>
+				   </tr>
+				   <tr>
+				      <td>CA</td>
+				      <td>Canada</td>
+				      <td>Toll Free</td>
+				      <td>2.15</td>
+				      <td>0.0306</td>
+				   </tr>
+			{/*   <tr>
+				      <td>CH</td>
+				      <td>Switzerland</td>
+				      <td>Local</td>
+				      <td>1.15</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>CL</td>
+				      <td>Chile</td>
+				      <td>Local</td>
+				      <td>7.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>CO</td>
+				      <td>Colombia</td>
+				      <td>Local</td>
+				      <td>14.00</td>
+				      <td>0.0986</td>
+				   </tr>
+				   <tr>
+				      <td>CO</td>
+				      <td>Colombia</td>
+				      <td>Toll Free</td>
+				      <td>25.00</td>
+				      <td>0.1793</td>
+				   </tr>
+				   <tr>
+				      <td>CZ</td>
+				      <td>Czech Republic</td>
+				      <td>Local</td>
+				      <td>1.50</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>CZ</td>
+				      <td>Czech Republic</td>
+				      <td>National</td>
+				      <td>1.50</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>CZ</td>
+				      <td>Czech Republic</td>
+				      <td>Toll Free</td>
+				      <td>35.00</td>
+				      <td>0.3108</td>
+				   </tr>
+				   <tr>
+				      <td>DE</td>
+				      <td>Germany</td>
+				      <td>Local</td>
+				      <td>1.15</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>DK</td>
+				      <td>Denmark</td>
+				      <td>Mobile</td>
+				      <td>15.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>DK</td>
+				      <td>Denmark</td>
+				      <td>Toll Free</td>
+				      <td>25.00</td>
+				      <td>0.3655</td>
+				   </tr>
+				   <tr>
+				      <td>DZ</td>
+				      <td>Algeria</td>
+				      <td>Local</td>
+				      <td>33.00</td>
+				      <td>0.2326</td>
+				   </tr>
+				   <tr>
+				      <td>EC</td>
+				      <td>Ecuador</td>
+				      <td>Local</td>
+				      <td>34.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>EE</td>
+				      <td>Estonia</td>
+				      <td>Local</td>
+				      <td>1.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>EE</td>
+				      <td>Estonia</td>
+				      <td>National</td>
+				      <td>1.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>EE</td>
+				      <td>Estonia</td>
+				      <td>Toll Free</td>
+				      <td>38.00</td>
+				      <td>0.4986</td>
+				   </tr>
+				   <tr>
+				      <td>FI</td>
+				      <td>Finland</td>
+				      <td>Mobile</td>
+				      <td>5.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>FI</td>
+				      <td>Finland</td>
+				      <td>Toll Free</td>
+				      <td>40.00</td>
+				      <td>0.2996</td>
+				   </tr>
+				   <tr>
+				      <td>GB</td>
+				      <td>United Kingdom</td>
+				      <td>Local</td>
+				      <td>1.15</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>GB</td>
+				      <td>United Kingdom</td>
+				      <td>Mobile</td>
+				      <td>1.15</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>GB</td>
+				      <td>United Kingdom</td>
+				      <td>National</td>
+				      <td>1.15</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>GB</td>
+				      <td>United Kingdom</td>
+				      <td>Toll Free</td>
+				      <td>2.15</td>
+				      <td>0.0686</td>
+				   </tr>
+				   <tr>
+				      <td>GD</td>
+				      <td>Grenada</td>
+				      <td>Local</td>
+				      <td>27.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>GH</td>
+				      <td>Ghana</td>
+				      <td>Mobile</td>
+				      <td>27.00</td>
+				      <td>0.1376</td>
+				   </tr>
+				   <tr>
+				      <td>GN</td>
+				      <td>Guinea</td>
+				      <td>Mobile</td>
+				      <td>27.00</td>
+				      <td>0.1376</td>
+				   </tr>
+				   <tr>
+				      <td>GR</td>
+				      <td>Greece</td>
+				      <td>Local</td>
+				      <td>1.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>HK</td>
+				      <td>Hong Kong</td>
+				      <td>National</td>
+				      <td>6.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>HK</td>
+				      <td>Hong Kong</td>
+				      <td>Toll Free</td>
+				      <td>25.00</td>
+				      <td>0.0758</td>
+				   </tr>
+				   <tr>
+				      <td>HR</td>
+				      <td>Croatia</td>
+				      <td>Local</td>
+				      <td>5.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>HR</td>
+				      <td>Croatia</td>
+				      <td>Toll Free</td>
+				      <td>19.00</td>
+				      <td>0.3236</td>
+				   </tr>
+				   <tr>
+				      <td>ID</td>
+				      <td>Indonesia</td>
+				      <td>Local</td>
+				      <td>23.00</td>
+				      <td>0.0311</td>
+				   </tr>
+				   <tr>
+				      <td>ID</td>
+				      <td>Indonesia</td>
+				      <td>Toll Free</td>
+				      <td>25.00</td>
+				      <td>0.3108</td>
+				   </tr>
+				   <tr>
+				      <td>IE</td>
+				      <td>Ireland</td>
+				      <td>Local</td>
+				      <td>1.60</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>IL</td>
+				      <td>Israel</td>
+				      <td>Local</td>
+				      <td>4.25</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>IL</td>
+				      <td>Israel</td>
+				      <td>Mobile</td>
+				      <td>15.00</td>
+				      <td>0.0436</td>
+				   </tr>
+				   <tr>
+				      <td>IL</td>
+				      <td>Israel</td>
+				      <td>National</td>
+				      <td>4.25</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>IL</td>
+				      <td>Israel</td>
+				      <td>Toll Free</td>
+				      <td>15.00</td>
+				      <td>0.143</td>
+				   </tr>
+				   <tr>
+				      <td>IT</td>
+				      <td>Italy</td>
+				      <td>Mobile</td>
+				      <td>30.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>IT</td>
+				      <td>Italy</td>
+				      <td>Toll Free</td>
+				      <td>25.00</td>
+				      <td>0.448</td>
+				   </tr>
+				   <tr>
+				      <td>JP</td>
+				      <td>Japan</td>
+				      <td>National</td>
+				      <td>4.50</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>JP</td>
+				      <td>Japan</td>
+				      <td>Toll Free</td>
+				      <td>25.00</td>
+				      <td>0.2866</td>
+				   </tr>
+				   <tr>
+				      <td>KE</td>
+				      <td>Kenya</td>
+				      <td>Local</td>
+				      <td>16.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>ML</td>
+				      <td>Mali</td>
+				      <td>Local</td>
+				      <td>38.00</td>
+				      <td>0.6876</td>
+				   </tr>
+				   <tr>
+				      <td>MO</td>
+				      <td>Macao</td>
+				      <td>Mobile</td>
+				      <td>70.00</td>
+				      <td>0.2726</td>
+				   </tr>
+				   <tr>
+				      <td>MX</td>
+				      <td>Mexico</td>
+				      <td>Local</td>
+				      <td>6.25</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>MX</td>
+				      <td>Mexico</td>
+				      <td>Toll Free</td>
+				      <td>30.00</td>
+				      <td>0.2247</td>
+				   </tr>
+			{/*  <tr>
+				      <td>NA</td>
+				      <td>Namibia</td>
+				      <td>Local</td>
+				      <td>33.00</td>
+				      <td>0.1111</td>
+				   </tr>
+				  
+				   <tr>
+				      <td>NL</td>
+				      <td>Netherlands</td>
+				      <td>Mobile</td>
+				      <td>6.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>NZ</td>
+				      <td>New Zealand</td>
+				      <td>Local</td>
+				      <td>3.15</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>NZ</td>
+				      <td>New Zealand</td>
+				      <td>Toll Free</td>
+				      <td>40.00</td>
+				      <td>0.2571</td>
+				   </tr>
+				   <tr>
+				      <td>PA</td>
+				      <td>Panama</td>
+				      <td>Local</td>
+				      <td>8.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>PE</td>
+				      <td>Peru</td>
+				      <td>Toll Free</td>
+				      <td>135.00</td>
+				      <td>0.4072</td>
+				   </tr>
+				   <tr>
+				      <td>PH</td>
+				      <td>Philippines</td>
+				      <td>Local</td>
+				      <td>15.00</td>
+				      <td>0.2286</td>
+				   </tr>
+				   <tr>
+				      <td>PH</td>
+				      <td>Philippines</td>
+				      <td>Toll Free</td>
+				      <td>25.00</td>
+				      <td>0.3876</td>
+				   </tr>
+				   <tr>
+				      <td>PL</td>
+				      <td>Poland</td>
+				      <td>Mobile</td>
+				      <td>4.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>PL</td>
+				      <td>Poland</td>
+				      <td>Toll Free</td>
+				      <td>20.00</td>
+				      <td>0.1682</td>
+				   </tr>
+				   <tr>
+				      <td>PR</td>
+				      <td>Puerto Rico</td>
+				      <td>Local</td>
+				      <td>3.25</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>PT</td>
+				      <td>Portugal</td>
+				      <td>Local</td>
+				      <td>1.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>RO</td>
+				      <td>Romania</td>
+				      <td>Local</td>
+				      <td>3.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>RO</td>
+				      <td>Romania</td>
+				      <td>National</td>
+				      <td>3.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>RO</td>
+				      <td>Romania</td>
+				      <td>Toll Free</td>
+				      <td>25.00</td>
+				      <td>0.2004</td>
+				   </tr>
+				   <tr>
+				      <td>SD</td>
+				      <td>Sudan</td>
+				      <td>Local</td>
+				      <td>130.00</td>
+				      <td>0.3433</td>
+				   </tr>
+				   <tr>
+				      <td>SI</td>
+				      <td>Slovenia</td>
+				      <td>Local</td>
+				      <td>5.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>SK</td>
+				      <td>Slovakia</td>
+				      <td>Toll Free</td>
+				      <td>25.00</td>
+				      <td>0.3375</td>
+				   </tr>
+				   <tr>
+				      <td>SV</td>
+				      <td>El Salvador</td>
+				      <td>Local</td>
+				      <td>9.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>TH</td>
+				      <td>Thailand</td>
+				      <td>Local</td>
+				      <td>25.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>TH</td>
+				      <td>Thailand</td>
+				      <td>Toll Free</td>
+				      <td>25.00</td>
+				      <td>0.2463</td>
+				   </tr>
+				   <tr>
+				      <td>TN</td>
+				      <td>Tunisia</td>
+				      <td>Local</td>
+				      <td>120.00</td>
+				      <td>0.7778</td>
+				   </tr>
+				   <tr>
+				      <td>TN</td>
+				      <td>Tunisia</td>
+				      <td>National</td>
+				      <td>120.00</td>
+				      <td>0.7778</td>
+				   </tr>
+				   <tr>
+				      <td>UG</td>
+				      <td>Uganda</td>
+				      <td>Local</td>
+				      <td>40.00</td>
+				      <td>0.1286</td>
+				   </tr>
+				   <tr>
+				      <td>UG</td>
+				      <td>Uganda</td>
+				      <td>National</td>
+				      <td>40.00</td>
+				      <td>0.1286</td>
+				   </tr>
+				   <tr>
+				      <td>UG</td>
+				      <td>Uganda</td>
+				      <td>Toll Free</td>
+				      <td>25.00</td>
+				      <td>0.2507</td>
+				   </tr>
+          */}
+				   <tr>
+				      <td>US</td>
+				      <td>United States</td>
+				      <td>Local</td>
+				      <td>1.15</td>
+				      <td>0.0171</td>
+				   </tr>
+				   <tr>
+				      <td>US</td>
+				      <td>United States</td>
+				      <td>Toll Free</td>
+				      <td>2.15</td>
+				      <td>0.0306</td>
+				   </tr>
+				    <tr>
+				      <td>VI</td>
+				      <td>Virgin Islands U.S.</td>
+				      <td>Local</td>
+				      <td>1.15</td>
+				      <td>0.0171</td>
+				   </tr>
+				  {/*
+				   <tr>
+				      <td>VE</td>
+				      <td>Venezuela</td>
+				      <td>Toll Free</td>
+				      <td>60.00</td>
+				      <td>0.3346</td>
+				   </tr>
+				  
+				   <tr>
+				      <td>ZA</td>
+				      <td>South Africa</td>
+				      <td>Local</td>
+				      <td>1.50</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>ZA</td>
+				      <td>South Africa</td>
+				      <td>Mobile</td>
+				      <td>4.00</td>
+				      <td>0.0186</td>
+				   </tr>
+				   <tr>
+				      <td>ZA</td>
+				      <td>South Africa</td>
+				      <td>National</td>
+				      <td>1.50</td>
+				      <td>0.0186</td>
+				   </tr>
+          */}
+				</table>
+				<br /><br /><br />
+  	</div>
+    </div>
+ 
+
+  )
+}
