@@ -115,7 +115,7 @@ function SideMenu() {
         <li className="item" onClick={() => { window.location.href = '/calls'; }}>
           <div className="nav_link submenu_item">
             <span className="navlink_icon">
-              <i className="bx bx-flag"></i>
+              <i className="bx bx-phone"></i>
             </span>
             <span className="navlink">{`Calls`}</span>
             <i className="bx bx-chevron-right arrow-left"></i>
